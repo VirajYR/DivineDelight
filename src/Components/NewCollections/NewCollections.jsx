@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 // import CollectionData from "../assets/new_collections"
+const apiUrl = process.env.REACT_APP_API_URL;
 import Item from '../Item/Item'
 import "./NewCollections.css"
 import { useEffect } from 'react'
 const NewCollections = () => {
     const [CollectionData, setCollectionData] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:3000/newcollections")
+        fetch(`${apiUrl}:3000/newcollections`)
             .then((response) => response.json())
             .then((data) => setCollectionData(data));
     },[])
