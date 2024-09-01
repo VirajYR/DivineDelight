@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 // import CollectionData from "../assets/new_collections"
-const apiUrl = process.env.REACT_APP_API_URL;
+const apiUrl = "http://ec2-13-232-237-129.ap-south-1.compute.amazonaws.com"
+;
 import Item from '../Item/Item'
 import "./NewCollections.css"
 import { useEffect } from 'react'

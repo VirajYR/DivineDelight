@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-const apiUrl = process.env.REACT_APP_API_URL;
+const apiUrl = "http://ec2-13-232-237-129.ap-south-1.compute.amazonaws.com"
+;
 import "./CSS/LoginSignup.css"
 const LoginSignup = () => {
   const [state, setState] = useState("Login");

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 // import ProductData from "../assets/data"
-const apiUrl = process.env.REACT_APP_API_URL;
+const apiUrl = "http://ec2-13-232-237-129.ap-south-1.compute.amazonaws.com"
+;
 import Item from '../Item/Item'
 import "./Popular.css"
 
