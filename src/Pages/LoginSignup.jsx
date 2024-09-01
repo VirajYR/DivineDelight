@@ -16,7 +16,7 @@ const LoginSignup = () => {
 
     console.log("Login Function Executed", formData);
     let responseData;
-    await fetch(`${apiUrl}:3000/login`, {
+    await fetch(`http://ec2-13-232-237-129.ap-south-1.compute.amazonaws.com:3000/login`, {
       method: "POST",
       headers: {
         Accept: "application/form-data",
@@ -37,7 +37,7 @@ const LoginSignup = () => {
   const signup = async () => {
     console.log("Sign Up Function Executed", formData);
     let responseData;
-    await fetch(`${apiUrl}:3000/signup`, {
+    await fetch(`http://ec2-13-232-237-129.ap-south-1.compute.amazonaws.com:3000/signup`, {
       method: "POST",
       headers: {
         Accept: "application/form-data",

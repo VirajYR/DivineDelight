@@ -18,7 +18,7 @@ const ShopContextProvider = (props) => {
     useEffect(() => {
         console.log("Fetching data...");
 
-        fetch(`${apiUrl}:3000/allproducts`)
+        fetch(`http://ec2-13-232-237-129.ap-south-1.compute.amazonaws.com:3000/allproducts`)
             .then((response) => {
                 if (!response.ok) {
                     throw new Error("Network Response was not ok");
@@ -32,7 +32,7 @@ const ShopContextProvider = (props) => {
             });
 
         if (localStorage.getItem("auth-token")) {
-            fetch(`${apiUrl}:3000/getcart`, {
+            fetch(`http://ec2-13-232-237-129.ap-south-1.compute.amazonaws.com:3000/getcart`, {
                 method: "POST",
                 headers: {
                     Accept: "application/form-data",
@@ -50,7 +50,7 @@ const ShopContextProvider = (props) => {
         setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
         if (localStorage.getItem("auth-token")) {
 
-            fetch(`${apiUrl}:3000/addtocart`, {
+            fetch(`http://ec2-13-232-237-129.ap-south-1.compute.amazonaws.com:3000/addtocart`, {
                 method: "POST",
                 headers: {
                     Accept: "application/form-data",
@@ -69,7 +69,7 @@ const ShopContextProvider = (props) => {
         setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
         if (localStorage.getItem("auth-token")) {
 
-            fetch(`${apiUrl}::3000/removefromcart`, {
+            fetch(`http://ec2-13-232-237-129.ap-south-1.compute.amazonaws.com:3000/removefromcart`, {
                 method: "POST",
                 headers: {
                     Accept: "application/form-data",

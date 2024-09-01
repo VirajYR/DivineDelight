@@ -8,7 +8,7 @@ import { useEffect } from 'react'
 const NewCollections = () => {
     const [CollectionData, setCollectionData] = useState([]);
     useEffect(() => {
-        fetch(`${apiUrl}:3000/newcollections`)
+        fetch(`http://ec2-13-232-237-129.ap-south-1.compute.amazonaws.com:3000/newcollections`)
             .then((response) => response.json())
             .then((data) => setCollectionData(data));
     },[])
