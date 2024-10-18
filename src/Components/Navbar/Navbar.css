@@ -1,0 +1,94 @@
+.Navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+    background-color: #2F4F4F;
+
+}
+
+.webIcon {
+    display: flex;
+}
+
+.webIcon h1 {
+    color: #D3D3D3;
+    padding: 45px 0;
+}
+
+.webIcon img {
+    width: 150px;
+}
+
+.menu {
+
+    display: flex;
+    gap: 15px;
+
+}
+
+.menu li {
+    list-style: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #D3D3D3;
+}
+
+.menu li a {
+    color: inherit;
+}
+
+.loginAndCart {
+    display: flex;
+    gap: 30px;
+
+}
+
+.loginBtn {
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #F0EAD6;
+    color: #2F4F4F;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+/* .cart {
+    fill: #D3D3D3;
+    display: inline-block; 
+   width: 10px; 
+     height: 10px;
+} */
+.loginBtn:hover {
+    transform: translateY(-2px);
+    background-color: #D3D3D3;
+    color: #2F4F4F;
+    cursor: pointer;
+}
+
+.cartCount {
+    background-color: red;
+    display: flex;
+    color: white;
+    margin-top: -10px;
+    margin-left: -45px;
+    width: 20px;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.menu hr {
+    background-color: red;
+}
+
+.NavHorizontalRuler hr {
+
+    height: 3px;
+    border: 0;
+    background-color: #e2e2e2;
+}
